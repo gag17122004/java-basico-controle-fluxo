@@ -1,3 +1,5 @@
+import java.util.concurrent.ThreadLocalRandom;
+
 public class ExemploWhile {
     public static void main(String[] args) {
         double mesada = 50.0;
@@ -19,4 +21,8 @@ public class ExemploWhile {
         */
     }
 
+    private static double valorAleatorio() {
+	return ThreadLocalRandom.current().nextDouble(2, 8);
+   }
+   
 }
